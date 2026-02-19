@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // important pour éviter la page blanche
+  base: './',   // important pour Vercel
+  build: {
+    outDir: 'dist'
+  }
 })
 
