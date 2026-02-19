@@ -1,7 +1,9 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+
+// Import du CSS global (important !)
+import './index.css';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -14,3 +16,4 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
